@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestorEmpleadosMaui.Pages.AddDepartmentPage"
+             Title="Añadir Departamento">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Frame CornerRadius="10" Padding="15" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Datos del Nuevo Departamento" 
+                       FontSize="18" 
+                       FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+
+                    <Label Text="Nombre:"/>
+                    <Entry Text="{Binding Department.Name}" Placeholder="Ingrese el nombre"/>
+
+                    <Label Text="URL de imagen:"/>
+                    <Entry Text="{Binding Department.ImageUri}" Placeholder="Ingrese la URL de la imagen"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="10">
+                <Button Grid.Column="0" 
+                    Text="Crear"
+                    Command="{Binding AddDepartmentCommand}"
+                    BackgroundColor="{StaticResource Primary}"/>
+
+                <Button Grid.Column="1" 
+                    Text="Cancelar"
+                    Command="{Binding CancelCommand}"
+                    BackgroundColor="Gray"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

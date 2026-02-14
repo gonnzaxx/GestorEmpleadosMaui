@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestorEmpleadosMaui.Pages.AddEmployeePage"
+             Title="Añadir Empleado">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Frame CornerRadius="10" Padding="15" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Datos del Nuevo Empleado" 
+                           FontSize="18" 
+                           FontAttributes="Bold"
+                           TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+
+                    <Label Text="Nombre:"/>
+                    <Entry Text="{Binding Employee.Name}" Placeholder="Ingresa el nombre"/>
+
+                    <Label Text="Apellido:"/>
+                    <Entry Text="{Binding Employee.LastName}" Placeholder="Ingresa el apellido"/>
+
+                    <Label Text="Dirección:"/>
+                    <Entry Text="{Binding Employee.Address}" Placeholder="Ingresa la dirección"/>
+
+                    <Label Text="Teléfono:"/>
+                    <Entry Text="{Binding Employee.Phone}" Placeholder="Ingresa el teléfono" Keyboard="Telephone"/>
+
+                    <Label Text="URL de imagen:"/>
+                    <Entry Text="{Binding Employee.ImageUri}" Placeholder="Ingresa la URL de la imagen"/>
+
+                    <Label Text="Departamento:"/>
+                    <Picker ItemsSource="{Binding Departments}"
+                            ItemDisplayBinding="{Binding Name}"
+                            SelectedItem="{Binding Employee.Department}"
+                            Title="Selecciona un departamento"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="10">
+                <Button Grid.Column="0" 
+                        Text="Crear"
+                        Command="{Binding AddEmployeeCommand}"
+                        BackgroundColor="{StaticResource Primary}"/>
+
+                <Button Grid.Column="1" 
+                        Text="Cancelar"
+                        Command="{Binding CancelCommand}"
+                        BackgroundColor="Gray"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

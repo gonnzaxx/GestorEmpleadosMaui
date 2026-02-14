@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestorEmpleadosMaui.Pages.MainPage"
+             Title="Inicio">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="25">
+
+            
+
+            <Border StrokeShape="RoundRectangle 80"
+                        HeightRequest="160"
+                        WidthRequest="160"
+                        HorizontalOptions="Center"
+                        Margin="0,20,0,0">
+                <Image Source="logo_luis_vives.png"
+                        Aspect="AspectFill" />
+            </Border>
+            
+
+            
+            <Label Text="Gestor de Empleados y Departamentos"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+
+            <Label Text="Bienvenido"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Gray"/>
+
+            
+            <VerticalStackLayout Spacing="15" Margin="0,20,0,0">
+
+                
+                <Frame CornerRadius="10" 
+                       Padding="0" 
+                       HasShadow="True"
+                       BackgroundColor="{AppThemeBinding Light=White, Dark=#2B2B2B}">
+
+                    <Grid ColumnDefinitions="Auto, *, Auto" Padding="20">
+
+                        <Border Grid.Column="0"
+                                StrokeShape="RoundRectangle 80"
+                                HeightRequest="60"
+                                WidthRequest="60"
+                                HorizontalOptions="Center"
+                                Margin="0,20,0,0">  
+                            <Image Source="icono_empleados.png"
+                                   Aspect="AspectFill" />
+                        </Border>
+
+                        <VerticalStackLayout Grid.Column="1" 
+                                             VerticalOptions="Center"
+                                             Margin="15,0,0,0">
+                            <Label Text="Empleados" 
+                                   FontSize="18" 
+                                   FontAttributes="Bold"
+                                   TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+                            <Label Text="Ver empleados" 
+                                   FontSize="12"
+                                   TextColor="Gray"/>
+                        </VerticalStackLayout>
+
+                        <Label Grid.Column="2" 
+                               Text="›" 
+                               FontSize="30"
+                               VerticalOptions="Center"
+                               TextColor="Gray"/>
+
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavigateToEmployeesCommand}"/>
+                        </Grid.GestureRecognizers>
+                    </Grid>
+                </Frame>
+
+                
+                <Frame CornerRadius="10" 
+                       Padding="0" 
+                       HasShadow="True"
+                       BackgroundColor="{AppThemeBinding Light=White, Dark=#2B2B2B}">
+                    <Grid ColumnDefinitions="Auto, *, Auto" Padding="20">
+                        <Border Grid.Column="0"
+                                StrokeShape="RoundRectangle 80"
+                                HeightRequest="60"
+                                WidthRequest="60"
+                                HorizontalOptions="Center"
+                                Margin="0,20,0,0">
+                            <Image Source="icono_departamentos.png"
+                                   Aspect="AspectFill" />
+                        </Border>
+
+                        <VerticalStackLayout Grid.Column="1" 
+                                             VerticalOptions="Center"
+                                             Margin="15,0,0,0">
+                            <Label Text="Departamentos" 
+                                   FontSize="18" 
+                                   FontAttributes="Bold"
+                                   TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+                            <Label Text="Ver departamentos" 
+                                   FontSize="12"
+                                   TextColor="Gray"/>
+                        </VerticalStackLayout>
+
+                        <Label Grid.Column="2" 
+                               Text="›" 
+                               FontSize="30"
+                               VerticalOptions="Center"
+                               TextColor="Gray"/>
+
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavigateToDepartmentsCommand}"/>
+                        </Grid.GestureRecognizers>
+                    </Grid>
+                </Frame>
+
+                
+                <Frame CornerRadius="10" 
+                       Padding="0" 
+                       HasShadow="True"
+                       BackgroundColor="{AppThemeBinding Light=White, Dark=#2B2B2B}">
+                    <Grid ColumnDefinitions="Auto, *, Auto" Padding="20">
+                        <Border Grid.Column="0"
+                                StrokeShape="RoundRectangle 80"
+                                HeightRequest="60"
+                                WidthRequest="60"
+                                HorizontalOptions="Center"
+                                Margin="0,20,0,0">
+                            <Image Source="icono_estadisticas.png" Aspect="AspectFill" />
+                        </Border>
+
+                        <VerticalStackLayout Grid.Column="1" 
+                                             VerticalOptions="Center"
+                                             Margin="15,0,0,0">
+                            <Label Text="Estadísticas" 
+                                   FontSize="18" 
+                                   FontAttributes="Bold"
+                                   TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+                            <Label Text="Ver gráficas" 
+                                   FontSize="12"
+                                   TextColor="Gray"/>
+                        </VerticalStackLayout>
+
+                        <Label Grid.Column="2" 
+                               Text="›" 
+                               FontSize="30"
+                               VerticalOptions="Center"
+                               TextColor="Gray"/>
+
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavigateToGraphCommand}"/>
+                        </Grid.GestureRecognizers>
+                    </Grid>
+                </Frame>
+
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

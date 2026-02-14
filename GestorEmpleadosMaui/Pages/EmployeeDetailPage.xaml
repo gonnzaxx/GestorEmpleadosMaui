@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestorEmpleadosMaui.Pages.EmployeeDetailPage"
+             Title="Detalles del Empleado">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            
+            <Border StrokeShape="RoundRectangle 50" 
+                HeightRequest="100"
+                WidthRequest="100"
+                HorizontalOptions="Center"
+                Stroke="White"
+                StrokeThickness="2">
+                <Image Source="{Binding Employee.ImageUri}"
+                   Aspect="AspectFill"/>
+            </Border>
+
+            
+            <Frame CornerRadius="10" Padding="15" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Información Personal" 
+                       FontSize="18" 
+                       FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+
+                    <Grid ColumnDefinitions="120, *" RowDefinitions="*,*,*,*,*,*" RowSpacing="8">
+                        <Label Grid.Row="1" Grid.Column="0" Text="Nombre:" FontAttributes="Bold"/>
+                        <Entry Grid.Row="1" Grid.Column="1" Text="{Binding Employee.Name}" Placeholder="Ingresa el nombre"/>
+
+                        <Label Grid.Row="2" Grid.Column="0" Text="Apellido:" FontAttributes="Bold"/>
+                        <Entry Grid.Row="2" Grid.Column="1" Text="{Binding Employee.LastName}" Placeholder="Ingresa el apellido"/>
+
+                        <Label Grid.Row="3" Grid.Column="0" Text="Dirección:" FontAttributes="Bold"/>
+                        <Entry Grid.Row="3" Grid.Column="1" Text="{Binding Employee.Address}" Placeholder="Ingresa la dirección"/>
+
+                        <Label Grid.Row="4" Grid.Column="0" Text="Teléfono:" FontAttributes="Bold"/>
+                        <Entry Grid.Row="4" Grid.Column="1" Text="{Binding Employee.Phone}" Placeholder="Ingresa el teléfono"/>
+
+                        <Label Grid.Row="5" Grid.Column="0" Text="Departamento:" FontAttributes="Bold"/>
+                        <Picker Grid.Row="5" Grid.Column="1"
+                                ItemsSource="{Binding Departments}"
+                                ItemDisplayBinding="{Binding Name}"
+                                SelectedItem="{Binding SelectedDepartment.Name}"/>
+                    </Grid>
+                </VerticalStackLayout>
+            </Frame>
+
+            
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="10" Margin="0,20,0,0">
+                <Button Grid.Column="0" 
+                        Text="Actualizar Cambios"
+                        Command="{Binding UpdateCommand}"
+                        BackgroundColor="{StaticResource Primary}"
+                            TextColor="White"/>
+
+                <Button Grid.Column="1" 
+                        Text="Eliminar"
+                        Command="{Binding DeleteCommand}"
+                        BackgroundColor="DarkRed"
+                        TextColor="White"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

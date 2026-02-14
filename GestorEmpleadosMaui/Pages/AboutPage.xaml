@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestorEmpleadosMaui.Pages.AboutPage"
+             Title="Acerca de">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            
+            <Border StrokeShape="RoundRectangle 80"
+                    HeightRequest="160"
+                    WidthRequest="160"
+                    HorizontalOptions="Center"
+                    Margin="0,20,0,0">
+                <Image Source="logo_luis_vives.png" Aspect="AspectFill" />
+            </Border>
+
+            
+            <Label Text="Gestor de Empleados y Departamentos" 
+                   FontSize="24" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+
+            
+            <Label Text="Versión 1.0.0" 
+                   FontSize="14"
+                   HorizontalOptions="Center"
+                   TextColor="Gray"/>
+
+            
+            <Frame CornerRadius="10" 
+                   Padding="15" 
+                   HasShadow="True" 
+                   Margin="0,20,0,0" 
+                   BackgroundColor="{AppThemeBinding Light=White, Dark=#2B2B2B}">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Descripción" 
+                           FontSize="18" 
+                           FontAttributes="Bold"
+                           TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+
+                    <Label Text="Aplicación multiplataforma para la gestión de empleados. Puedes consultar, añadir, editar y eliminar empleados y departamentos."
+                           FontSize="14"
+                           TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+                </VerticalStackLayout>
+            </Frame>
+
+
+            
+            <Frame CornerRadius="10" 
+                   Padding="15" 
+                   HasShadow="True" 
+                   BackgroundColor="{AppThemeBinding Light=White, Dark=#2B2B2B}">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Tecnologías" 
+                           FontSize="18" 
+                           FontAttributes="Bold"
+                           TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+
+                    <Label Text=".NET MAUI" FontSize="14"/>
+                    <Label Text="Fast API" FontSize="14"/>
+                    <Label Text="C#" FontSize="14"/>
+                    <Label Text="Arquitectura MVVM" FontSize="14"/>
+                    <Label Text="Community Toolkit" FontSize="14"/>
+                    
+                </VerticalStackLayout>
+            </Frame>
+
+            
+            <Frame CornerRadius="10" 
+                   Padding="15" 
+                   HasShadow="True" 
+                   BackgroundColor="{AppThemeBinding Light=White, Dark=#2B2B2B}">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="Desarrollado por" 
+                           FontSize="14" 
+                           TextColor="Gray"
+                           HorizontalOptions="Center"/>
+                    <Label Text="Gonzalo Santiago Ariza" 
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+                    <Label Text="Desarrollo de Interfaces" 
+                           FontSize="12"
+                           HorizontalOptions="Center"
+                           TextColor="Gray"/>
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
