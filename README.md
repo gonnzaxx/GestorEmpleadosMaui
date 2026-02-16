@@ -82,7 +82,9 @@ docker run -d --name APIempleados --network empleados-network -p 8000:8000 -e DA
 - .NET 10
 - FastAPI
 - Docker
+  
 - Arquitectura MVVM
+- IoC
   
 - Microsoft.Extensions.Logging.Debug (10.0.0)
 - CommunityTookit.Mvvm (8.4.0)
@@ -170,5 +172,4 @@ https://github.com/gonnzaxx/APIGestorEmpleados
 ---
 
 ## Licencia
-
 Licencia MIT.
