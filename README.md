@@ -59,3 +59,55 @@ docker run -d --name APIempleados_postgres --network empleados-network -e POSTGR
 ```
 docker run -d --name APIempleados --network empleados-network -p 8000:8000 -e DATABASE_URL="postgresql://postgres:123456@APIempleados_postgres:5432/empleados_db" empleados_api
 ```
+
+## Uso
+
+1. Ejecutar la API mediante Docker.  
+2. Abrir el proyecto MAUI en Visual Studio.  
+3. Ejecutar la aplicación.  
+4. Gestionar empleados y departamentos desde la interfaz.
+
+
+### Requisitos
+
+- Visual Studio 2022 o superior  
+- .NET 10 SDK  
+- Docker Desktop
+
+## 📦 Estructura del Proyecto
+
+```
+GestorEmpleadosMaui/
+│
+├── Models/
+├── Services/
+├── Pages/
+├── PagesModels/
+└── Resources/
+```
+
+---
+
+## Historial de versiones
+
+### 1.0.0
+- Versión inicial funcional  
+- CRUD completo de empleados  
+- CRUD completo de departamentos  
+- Soporte SQLite y PostgreSQL  
+
+---
+
+## Autor
+
+**Gonzalo Santiago Ariza**  
+Proyecto académico – Desarrollo de Aplicaciones Multiplataforma  
+
+Repositorio API:  
+https://github.com/gonnzaxx/APIGestorEmpleados  
+
+---
+
+## Licencia
+
+Proyecto académico sin fines comerciales.
