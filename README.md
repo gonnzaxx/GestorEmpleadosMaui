@@ -8,7 +8,7 @@
 
 ---
 
-## Captura de la aplicación
+## Preview de la aplicación
 
 ![Snapshot de la aplicación](snapshot.png)
 
