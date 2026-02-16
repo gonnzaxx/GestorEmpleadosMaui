@@ -14,6 +14,17 @@
 
 ---
 
+## Características
+
+- Listado de empleados  
+- Gestión de departamentos  
+- Crear nuevos empleados y departamentos  
+- Editar registros existentes  
+- Eliminar registros  
+- Alertas tras operaciones (no recarga en caliente)  
+
+---
+
 ## Cosas a tener en cuenta
 La aplicación no recarga los datos en caliente, por lo que cuando se añade, elimina o actualiza algo he puesto una alerta para que se vea.
 
