@@ -81,12 +81,53 @@ GestorEmpleadosMaui/
 │
 ├── Properties/
 ├── Models/
+│    ├── Employee.cs
+│    └── Department.cs
+│
 ├── Pages/
+│    ├── AboutPage.xaml
+│    ├── AddDepartmentPage.xaml
+│    ├── AddEmployeePage.xaml
+│    ├── DepartmentDetailPage.xaml
+│    ├── DepartmentPage.xaml
+│    ├── EmployeeDetailPage.xaml
+│    ├── EmployeePage.xaml
+│    ├── GraphPage.xaml
+│    └── MainPage.xaml
+│ 
 ├── PagesModels/
+│    ├── AboutPageModel.xaml
+│    ├── AddDepartmentPageModel.xaml
+│    ├── AddEmployeePageModel.xaml
+│    ├── DepartmentDetailPageModel.xaml
+│    ├── DepartmentPageModel.xaml
+│    ├── EmployeeDetailPageModel.xaml
+│    ├── EmployeePageModel.xaml
+│    ├── GraphPageModel.xaml
+│    └── MainPageModel.xaml
+│ 
 ├── Platforms/
+│    ├── Android
+│    ├── IOS
+│    ├── MacCatalyst
+│    └── Windows
+│ 
 ├── Resources/
+│    ├── AppIcon
+│    ├── Fonts
+│    ├── Raw
+│    ├── Images
+│    └── Styles
+│ 
 ├── Services/
+│    ├── DepartmentService.cs
+│    ├── EmployeeService.cs
+│    └── IService.cs
+│ 
 ├── Templates/
+│    ├── DepartmentCardTemplate.xaml
+│    └── EmployeeCardTemplate.xaml
+│ 
 ├── App.xaml/
 ├── AppShell.xaml
 └── MauiProgram.cs
