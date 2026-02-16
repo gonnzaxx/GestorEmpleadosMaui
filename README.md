@@ -11,6 +11,9 @@
 ## Preview de la aplicación
 
 ![Snapshot de la aplicación](snapshot.png)
+![Snapshot de la aplicación](snapshot2.png)
+![Snapshot de la aplicación](snapshot3.png)
+
 
 ---
 
