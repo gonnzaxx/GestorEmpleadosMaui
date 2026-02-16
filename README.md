@@ -16,12 +16,9 @@
 
 ## Características
 
-- Listado de empleados  
-- Gestión de departamentos  
-- Crear nuevos empleados y departamentos  
-- Editar registros existentes  
-- Eliminar registros  
-- Alertas tras operaciones (no recarga en caliente)  
+- Listado de empleados y departamentos 
+- Gestión de empleados y departamentos (CRUD BÁSICO)
+- Alertas tras operaciones  
 
 ---
 
