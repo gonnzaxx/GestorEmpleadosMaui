@@ -4,6 +4,7 @@ La aplicación no recarga los datos en caliente, por lo que cuando se añade, el
 
 Antes de ejecutar la aplicación, hay que ejecutar el contendor Docker para conectarse a la API. Para ello:
 
+## Instalación
 ### Clonar repositorio
 ```
 git clone https://github.com/gonnzaxx/APIGestorEmpleados.git
