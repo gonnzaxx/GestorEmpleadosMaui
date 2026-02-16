@@ -1,6 +1,4 @@
 ﻿# Gestor de Empleados y Departamentos Maui
-
- # Gestor de Empleados y Departamentos MAUI
 > Aplicación multiplataforma desarrollada en .NET MAUI para la gestión de empleados y departamentos mediante una API REST desplegada con Docker.
 
 ![.NET MAUI](https://img.shields.io/badge/.NET-MAUI-purple?style=flat-square&logo=dotnet)
