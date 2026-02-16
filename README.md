@@ -1,4 +1,13 @@
 ﻿# Gestor de Empleados y Departamentos Maui
+
+---
+
+## Captura de la aplicación
+
+![Snapshot de la aplicación](snapshot.png)
+
+---
+
 ## Cosas a tener en cuenta
 La aplicación no recarga los datos en caliente, por lo que cuando se añade, elimina o actualiza algo he puesto una alerta para que se vea.
 
