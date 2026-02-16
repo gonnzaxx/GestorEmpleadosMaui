@@ -74,16 +74,22 @@ docker run -d --name APIempleados --network empleados-network -p 8000:8000 -e DA
 - .NET 10 SDK  
 - Docker Desktop
 
-## 📦 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 GestorEmpleadosMaui/
 │
+├── Properties/
 ├── Models/
-├── Services/
 ├── Pages/
 ├── PagesModels/
-└── Resources/
+├── Platforms/
+├── Resources/
+├── Services/
+├── Templates/
+├── App.xaml/
+├── AppShell.xaml
+└── MauiProgram.cs
 ```
 
 ---
