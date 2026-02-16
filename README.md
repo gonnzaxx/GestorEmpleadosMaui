@@ -1,5 +1,5 @@
 ﻿# Gestor de Empleados y Departamentos Maui
-> Aplicación multiplataforma desarrollada en .NET MAUI para la gestión de empleados y departamentos mediante una API REST desplegada con Docker.
+> Aplicación multiplataforma desarrollada en .NET MAUI para la gestión de empleados y departamentos mediante una API REST desplegada con Docker con arquitectura MVVM, utilizando IoC
 
 ![.NET MAUI](https://img.shields.io/badge/.NET-MAUI-purple?style=flat-square&logo=dotnet)
 ![Docker](https://img.shields.io/badge/Docker-Ready-blue?style=flat-square&logo=docker)
@@ -77,6 +77,17 @@ docker run -d --name APIempleados --network empleados-network -p 8000:8000 -e DA
 - .NET 10 SDK  
 - Docker Desktop
 
+### Tecnologías y librerías
+- C#
+- .NET 10
+- FastAPI
+- Docker
+- Arquitectura MVVM
+  
+- Microsoft.Extensions.Logging.Debug (10.0.0)
+- CommunityTookit.Mvvm (8.4.0)
+- CommunityToolkit.Maui (14.0.0)
+- Microsoft.Maui.Controls (10.0.30)
 ## Estructura del Proyecto
 
 ```
@@ -160,4 +171,4 @@ https://github.com/gonnzaxx/APIGestorEmpleados
 
 ## Licencia
 
-Proyecto académico sin fines comerciales.
+Licencia MIT.
